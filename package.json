@@ -1,0 +1,31 @@
+{
+  "name": "heartfeltorigins",
+  "version": "1.0.0",
+  "description": "Art Website 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoweCourtney/HeartFeltOrigins.git"
+  },
+  "keywords": [
+    "eCommerce"
+  ],
+  "author": "Courtney Rowe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoweCourtney/HeartFeltOrigins/issues"
+  },
+  "homepage": "https://github.com/RoweCourtney/HeartFeltOrigins#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cloudinary": "^1.29.1",
+    "express": "^4.17.3",
+    "multer": "^1.4.4",
+    "sessions": "0.0.2-7"
+  }
+}
