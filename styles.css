@@ -31,6 +31,10 @@ p {
     padding: 0.5rem;
 }
 
+.cartIcon {
+    margin-right: 1rem;
+}
+
 .navbar-nav {
     margin-top: 4rem;
 }
