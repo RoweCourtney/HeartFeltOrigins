@@ -1,0 +1,53 @@
+/* ____________________ General Font Settings ____________________ */
+
+h1, h2, h3 {
+    font-family: 'Philosopher';
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Lora';
+}
+
+/* ____________________ Nav Bar ____________________ */
+
+.navbar {
+    background-color: #91B3BC;
+}
+
+.logo {
+    padding: 0.5rem;
+}
+
+.navbar-nav {
+    margin-top: 4rem;
+}
+
+.menuHeader {
+    background-color: #4D385F;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+
+/* removes dropdown menu arrow */
+.dropdown-toggle::after {   
+    border: none;
+} 
+
+/* removes dropdown menu top padding */
+.dropdown-menu {
+    padding: 0;
+  }
