@@ -21,10 +21,19 @@ p {
     font-family: 'Lora';
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: #0C6275;
+}
+
 /* ____________________ Nav Bar ____________________ */
 
 .navbar {
     background-color: #91B3BC;
+    /* margin-bottom: 125px; */
 }
 
 .logo {
@@ -73,10 +82,34 @@ p {
     padding: 0;
   }
 
+  /* ____________________ Categories (homepage) ____________________ */
 
 
 
+.imgCategory {
+    border-color: black;
+    border-style: solid;
+    margin-left: 2%;
+}
 
+.categoryLinks {
+    background-color: black;
+    text-align: center;
+    padding: 3%;
+    width: 300px;
+    margin-left: 2%;
+}
+
+.container {
+    
+}
+.row {
+    
+}
+
+.col {
+    margin: 3% 0%;  
+}
 
 
   /* ____________________ Footer ____________________ */
@@ -94,7 +127,7 @@ body {
     flex-direction: column;
   }
   
-  footer {
+footer {
     background-color: #91B3BC;
     margin-top: auto;
-  }
+}
