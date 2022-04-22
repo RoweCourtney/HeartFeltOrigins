@@ -44,7 +44,7 @@ connectedCallback() {
                                 <h3 class="menuHeader">Shopping</h3>
                                 <a class="dropdown-item" href="#">Alcohol Inks</a>
                                 <a class="dropdown-item" href="#">Digital Art</a>
-                                <a class="dropdown-item" href="#">Paintings</a>
+                                <a class="dropdown-item" href="paintings.html">Paintings</a>
                                 <br>
 
                                 <h3 class="menuHeader">My Items</h3>

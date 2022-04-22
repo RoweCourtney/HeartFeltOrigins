@@ -17,7 +17,7 @@ h3 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Lora';
 }
 
@@ -110,6 +110,32 @@ a:hover {
 .col {
     margin: 3% 0%;  
 }
+
+/* ____________________ Listings (paintings) ____________________ */
+
+.paint-col {
+    border: black;
+    border-style: solid;
+}
+
+.card-img {
+    border: black;
+    border-style: solid;
+}
+
+.paint-info {
+    
+}
+
+.card-title {
+    color: #1D3A66;
+    text-decoration: underline;
+}
+
+.sizePrice {
+    font-family: 'Lora';
+}
+
 
 
   /* ____________________ Footer ____________________ */
