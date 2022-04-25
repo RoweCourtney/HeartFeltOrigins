@@ -16,7 +16,7 @@ h3 {
     font-size: 18px;
 }
 
-p {
+p, label {
     font-size: 14px;
     font-family: 'Lora';
 }
@@ -84,15 +84,21 @@ a:hover {
 
   /* ____________________ Categories (homepage) ____________________ */
 
-
-
-.imgCategory {
+.home-img {
     border-color: black;
     border-style: solid;
     margin-left: 2%;
 }
 
-.categoryLinks {
+.home-row {
+    margin: 50px 0px 40px 0px;
+}
+
+.home-col {
+    margin: 3% 0%;  
+}
+
+.home-links {
     background-color: black;
     text-align: center;
     padding: 10px;
@@ -100,43 +106,157 @@ a:hover {
     margin-left: 2%;
 }
 
-.container {
-    
-}
-.row {
-    margin: 50px 0px 40px 0px;
-}
-
-.col {
-    margin: 3% 0%;  
-}
-
 /* ____________________ Listings (paintings) ____________________ */
-
-.paint-col {
-    border: black;
-    border-style: solid;
-}
 
 .card-img {
     border: black;
     border-style: solid;
+    border-width: 5px;
 }
 
-.paint-info {
-    
-}
-
-.card-title {
+.card-title, .card-title-original {
     color: #1D3A66;
     text-decoration: underline;
+    margin: 15px 0px;
 }
 
-.sizePrice {
-    font-family: 'Lora';
+.card-title-original {
+    margin-top: 30px;
 }
 
+.status {
+    margin: 5px 50px;
+}
 
+hr {
+    color: #91B3BC;
+    margin: auto;
+    width: 120px;
+}
+
+hr:not([size]) {
+    height: 2px;
+}
+
+.list-links {
+    margin-top: 20px;
+}
+.wishlist-link, .cart-link {
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 1px;
+}
+
+.cart-link {
+    padding: 12px;
+}
+
+/* ____________________ Custom Radio Buttons (for all listings) ____________________ */
+
+.card-text-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 5px 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .card-text-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border: #4D385F;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  /* On mouse-over, add background color */
+  .card-text-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add new background */
+  .card-text-radio input:checked ~ .checkmark {
+    background-color:#0C6275;
+  }
+  
+  /* Create the indicator (the dot - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator dot when checked */
+  .card-text-radio input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator */
+  .card-text-radio .checkmark:after {
+      top: 4px;
+      left: 4px;
+      width: 5px;
+      height: 5px;
+      background: white;
+  }
+
+/* ____________________ Flip Cards ____________________ */
+
+  .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 375px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+
+  }
+  
+  .flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
 
   /* ____________________ Footer ____________________ */
 

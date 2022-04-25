@@ -28,40 +28,55 @@
     </head>   
     <!-- __________________________________________________________ -->
     <body>
-        <!-- <div class="container">
-            <div class="row g-0">
-                <div class="col col-xs-4 col-md-6 col-lg-4 col-xl-3 paint-col">
-                    <h3 class="paint-title"> Baby Groot </h3>
-                    <img src="icons/Baby-Groot.JPG" class="paint-img " height="250px" width="166px">
+        <div class=" container mb-3 mt-3 flip-card ">
+            <div class="row g-0 flip-card-inner">
 
+                <div class="col col-xs-4 col-md-6 col-lg-4 col-xl-3 flip-card-front">
+                    <img src="icons/Baby-Groot.JPG" class="card-img" width="250px" height="375px">
                 </div>
+
+                <div class="flip-card-back">
+                    <h2 class="card-title">Baby Groot</h2> 
+                    <label class="card-text-radio"> 4 x 6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $3 
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <hr>
+                    <label class="card-text-radio"> 5 x 7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $5
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <hr>
+                    <label class="card-text-radio"> 8 x 10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $10
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <hr>
+                    <label class="card-text-radio"> 9 x 12 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $15
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>  
+
+                    <h2 class="card-title-original">Original Art Work</h2> 
+                    <label class="card-text-radio"> 9 x 12 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $25
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <div class="list-links">
+                        <h3 class="wishlist-link"><a href="#">
+                            <img src="icons/Wishlist@3x.png" height="35px">
+                        </a></h3>
+                        <h3 class="cart-link"><a href="#">Add to Cart</a></h3>
+                    </div>
+
+                 </div>
             </div>
-        </div> -->
-        <div class="card mb-3" style="max-width: 360px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="icons/Baby-Groot.JPG" class="img-fluid card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Baby Groot</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
+        </div>
 
     </body>
-    <!-- __________________________________________________________ -->
-        <footer id="footer">
-            <footer-component></footer-component>
-        </footer>
-    </html>
+<!-- __________________________________________________________ -->
+    <footer id="footer">
+        <footer-component></footer-component>
+    </footer>
+</html>
