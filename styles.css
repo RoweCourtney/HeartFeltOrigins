@@ -114,6 +114,14 @@ a:hover {
     border-width: 5px;
 }
 
+.card-contain {
+    margin: 25px 0px;
+}
+
+.card-col {
+    align-content: center;
+}
+
 .card-title, .card-title-original {
     color: #1D3A66;
     text-decoration: underline;
@@ -224,6 +232,7 @@ hr:not([size]) {
     width: 250px;
     height: 375px;
     perspective: 1000px;
+    margin: 25px 0px;
   }
   
   .flip-card-inner {
