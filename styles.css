@@ -129,7 +129,7 @@ a:hover {
 }
 
 .card-title-original {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .status {
@@ -147,7 +147,7 @@ hr:not([size]) {
 }
 
 .list-links {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .wishlist-link, .cart-link {
     background-color: black;
@@ -232,7 +232,7 @@ hr:not([size]) {
     width: 250px;
     height: 375px;
     perspective: 1000px;
-    margin: 25px 0px;
+    margin: 50px 0px;
   }
   
   .flip-card-inner {
