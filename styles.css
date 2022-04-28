@@ -91,7 +91,7 @@ a:hover {
 }
 
 .home-row {
-    margin: 50px 0px 40px 0px;
+    /* margin: 50px 0px 40px 0px; */
 }
 
 .home-col {
@@ -302,105 +302,96 @@ hr:not([size]) {
 /* ____________________ About ____________________ */
 
 
-/* ____________________ Contact ____________________ */
+/* ____________________ Contact / Reviews / Shipping ____________________ */
 
 .contactHeading {
     color: #0C6275;
     text-align: center;
+}
+
+.contactHeading, .reviewHeading {
     text-decoration: underline;
     margin: 30px auto;
 }
 
-.contactSubHead {
+.contactSubHead, .reviewSubHead {
     text-align: center;
     width: 320px;
-    height: auto;
     margin: 0px auto 30px;
 }
+
+        .addReview {
+            margin: auto;
+            width: 100px;
+            background-color: #91B3BC;
+            text-align: center;
+            padding: 5px;
+        }
+
+                    .shipping-contain {
+                        margin: auto;
+                    }
 
 .contact-row {
     margin-bottom: 40px;
-}
-
-.contact-col {
-    min-width: 200px;
-    max-width: 360px;
-    margin: 5px;
-    background-color: #1D3A66;
-}
-
-.contact-title {
-    color: white;
-    text-decoration: underline;
-    padding: 20px 20px 5px;
-}
-
-.contact-content {
-    color: #91B3BC;
-    padding: 0px 20px;
-}
-
-/* ____________________ Reviews ____________________ */
-
-.reviewHeading {
-    text-decoration: underline;
-    margin: 30px auto;
-}
-
-.reviewSubHead {
-    text-align: center;
-    width: 320px;
-    margin: 0px auto 30px;
-}
-
-.addReview {
-    margin: auto;
-    width: 100px;
-    background-color: #91B3BC;
-    text-align: center;
-    padding: 5px;
 }
 
 .review-row {
     margin: 30px 0px;
 }
 
-.review-col {
-    /* margin: 0px 2px; */
-}
-
-.review-card {
-    max-width: 320px;
-    margin: 20px;
+.contact-col, .shipping-col {
+    min-width: 200px;
+    max-width: 360px;
+    margin: 5px;
     background-color: #1D3A66;
 }
 
-.review-title {
+        .review-card {
+            max-width: 320px;
+            margin: 20px;
+            background-color: #1D3A66;
+        }
+
+.contact-title, .review-title, .shipping-title {
     color: white;
     text-decoration: underline;
     padding: 20px 20px 5px;
 }
 
-.review-content {
+.contact-content, .review-content {
     color: #91B3BC;
     padding: 0px 20px;
 }
 
-.star {
-    color:white;
-    font-size: 20px;
-}
+                        .shipping-content {
+                            color: #91B3BC;
+                            padding: 0px 20px;
+                        }
 
-.star_rating {
-    padding: 0px 20px 5px;
-    display: inline;
-}
+        .star {
+            color:white;
+            font-size: 20px;
+        }
 
-.date {
-    color: #91B3BC;
-    display: inline;
- }
+        .star_rating {
+            padding: 0px 20px 5px;
+            display: inline;
+        }
 
+        .date {
+            color: #91B3BC;
+            display: inline;
+        }
+
+                        .shipping-calc {
+
+                        }
+                        
+                        .estimates {
+                            text-align: center;
+                        
+                        }
 
 /* ____________________ New Review ____________________ */
 
@@ -457,8 +448,6 @@ hr:not([size]) {
     line-height: 21px;
     }
   }  
-
-/* ____________________ Shipping ____________________ */
 
 
 /* ____________________ Admin Dashboard ____________________ */
