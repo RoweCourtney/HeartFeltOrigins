@@ -315,7 +315,15 @@ hr:not([size]) {
 .reviewSubHead {
     text-align: center;
     width: 320px;
-    margin: 0px auto;
+    margin: 0px auto 30px;
+}
+
+.addReview {
+    margin: auto;
+    width: 100px;
+    background-color: #91B3BC;
+    text-align: center;
+    padding: 5px;
 }
 
 .review-row {
