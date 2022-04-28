@@ -304,6 +304,41 @@ hr:not([size]) {
 
 /* ____________________ Contact ____________________ */
 
+.contactHeading {
+    color: #0C6275;
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px auto;
+}
+
+.contactSubHead {
+    text-align: center;
+    width: 320px;
+    height: auto;
+    margin: 0px auto 30px;
+}
+
+.contact-row {
+    margin-bottom: 40px;
+}
+
+.contact-col {
+    min-width: 200px;
+    max-width: 360px;
+    margin: 5px;
+    background-color: #1D3A66;
+}
+
+.contact-title {
+    color: white;
+    text-decoration: underline;
+    padding: 20px 20px 5px;
+}
+
+.contact-content {
+    color: #91B3BC;
+    padding: 0px 20px;
+}
 
 /* ____________________ Reviews ____________________ */
 
