@@ -295,41 +295,15 @@ hr:not([size]) {
 
 /* ____________________ About ____________________ */
 
-.about-row {
-    /* height: 100vh; */
-}
-
 .sidebar1 {
     background-color: #0C6275;
     width: 250px;
+    /* height: 100vh; */
+    height: calc(100vh - 80px - 100px); /* 100vh - footer height - header height */
 }
 
-@media screen and (max-width: 768px) {
-    .sidebar1 {
-        display: none;
-    }
-
-    .behanceIcon, .gitIcon, .linkedIN-Icon {
-        margin: 3px 20px;
-        
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .sidebar2, .col-innerA, .col-innerB {
-        flex: none;
-    }
-}
-
-.sidebar2 {
-    background-color: #0C6275;
-    width: 100%;
-}
-
-@media screen and (min-width: 769px) {
-    .sidebar2 {
-        display: none;
-    }
+.behanceIcon, .gitIcon, .linkedIN-Icon {
+    margin: 35px 98px;
 }
 
 .aboutME {
@@ -345,24 +319,15 @@ hr:not([size]) {
    max-width: 200px;
 }
 
-.col-innerB {
-
-}
-
-@media screen and (max-width: 768px) {
-    .col-innerB {
-        padding-right: 25px;
-    }
-    .aboutME {
-        padding: 0px;
-    }
-}
-
 .about-img {
     border: black;
     border-style: solid;
     border-width: 4px;
     margin-bottom: 20px;
+}
+
+.col-innerB {
+
 }
 
 .name {
@@ -373,6 +338,49 @@ hr:not([size]) {
 .about-content {
     color: #4D385F;
     margin-right: 40px;
+}
+
+.sidebar2 {
+    background-color: #0C6275;
+}
+
+/* ________________________________________ @media screen adj for sidebar */
+
+@media screen and (max-width: 768px) {
+    .sidebar1 {
+        display: none;
+    }
+
+    .aboutME {
+        padding: 0px;
+    }
+
+    .col-innerB {
+        padding-right: 25px;
+    }
+
+    .sidebar2 {
+        width: 92%;
+    }
+
+    .behanceIcon, .gitIcon, .linkedIN-Icon {
+        margin: 3px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .col {
+        flex: none;
+    }
+    .sidebar2 {
+        width:82%
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .sidebar2 {
+        display: none !important;
+    }
 }
 
 /* ____________________ Contact / Reviews / Shipping ____________________ */
