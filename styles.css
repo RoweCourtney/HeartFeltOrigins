@@ -33,7 +33,7 @@ a:hover {
 
 .navbar {
     background-color: #91B3BC;
-    /* margin-bottom: 125px; */
+    max-height: 112px;
 }
 
 .logo {
@@ -283,6 +283,47 @@ hr:not([size]) {
 
 /* ____________________ Wishlist ____________________ */
 
+.sidebar1 {/* Info can be found in About section */}
+
+.wish-card-outter {/* Info can be found in About section */}
+
+
+.wish-card-inner {
+    width: 300px;
+    height: 125px;
+    border: black;
+    border-style: solid;
+    border-width: 3px;
+    margin: 30px 0px;
+}
+
+.wish-thumbnail {
+   float: left;
+   border: black;
+   border-style: solid;
+   margin: 10px 10px 10px 10px;
+}
+
+.wish-content {
+    margin: 8px;
+}
+
+.wish-item {
+    text-decoration: underline;
+}
+
+.wish-itemInfo {
+    margin-top: 10px;
+
+}
+
+.wish-cartLink {
+    background-color: #4D385F;
+    text-align: center;
+    color: white;
+    width: 190px;
+    margin: 27px 0px 0px 85px;  
+}
 
 /* ____________________ Cart ____________________ */
 
@@ -297,20 +338,28 @@ hr:not([size]) {
 
 .sidebar1 {
     background-color: #0C6275;
-    width: 250px;
-    /* height: 100vh; */
-    height: calc(100vh - 80px - 100px); /* 100vh - footer height - header height */
+    width: 300px;
+    height: calc(100vh - 80px - 112px);
+}
+
+.about-links {
+    margin-left: 65px;
 }
 
 .behanceIcon, .gitIcon, .linkedIN-Icon {
-    margin: 35px 98px;
+    margin: 35px 5px;
+}
+
+.behance, .github, .linkedIN {
+    font-family: 'Lora';
+    font-size: 12px;
 }
 
 .aboutME {
     margin: 50px 0px;
 }
 
-.about-card {
+.about-card, .wish-card-outter {
     margin-left: 30px;
     border: none;
 }
@@ -324,10 +373,6 @@ hr:not([size]) {
     border-style: solid;
     border-width: 4px;
     margin-bottom: 20px;
-}
-
-.col-innerB {
-
 }
 
 .name {
@@ -348,7 +393,7 @@ hr:not([size]) {
 
 @media screen and (max-width: 768px) {
     .sidebar1 {
-        display: none;
+        display: none !important;
     }
 
     .aboutME {
@@ -366,6 +411,7 @@ hr:not([size]) {
     .behanceIcon, .gitIcon, .linkedIN-Icon {
         margin: 3px 20px;
     }
+
 }
 
 @media screen and (max-width: 576px) {
