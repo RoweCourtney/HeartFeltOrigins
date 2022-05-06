@@ -23,6 +23,7 @@ p, label {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 a:hover {
@@ -281,14 +282,39 @@ hr:not([size]) {
 /* ____________________ Terms & Conditions ____________________ */
 
 
-/* ____________________ Wishlist ____________________ */
+/* ____________________ Wishlist / Cart ____________________ */
 
-.sidebar1 {/* Info can be found in About section */}
+.sidebar1-cart {/* Info can be found in About section */}
 
-.wish-card-outter {/* Info can be found in About section */}
+.wish-card-outter, .cart-card-outter {/* Info can be found in About section */}
 
+.cart-row {
+    margin-left: -50px;
+}
 
-.wish-card-inner {
+.cart-sidebar1 {
+    margin: 30px 0px;
+}
+
+.cartItems {
+    text-align: right;
+    color: white;
+    margin: 10px 40px;
+}
+
+.hr2 {
+    width: 240px;
+    opacity: 100;
+}
+
+.checkout-link {
+    background-color: #1D3A66;
+    text-align: center;
+    padding: 5px;
+    margin: 100px 60px 10px;
+}
+
+.wish-card-inner, .cart-card-inner  {
     width: 300px;
     height: 125px;
     border: black;
@@ -297,35 +323,33 @@ hr:not([size]) {
     margin: 30px 0px;
 }
 
-.wish-thumbnail {
+.wish-thumbnail, .cart-thumbnail {
    float: left;
    border: black;
    border-style: solid;
    margin: 10px 10px 10px 10px;
 }
 
-.wish-content {
+.wish-content, .cart-content {
     margin: 8px;
 }
 
-.wish-item {
+.wish-item, .cart-item {
     text-decoration: underline;
 }
 
-.wish-itemInfo {
+.wish-itemInfo, .cart-itemInfo {
     margin-top: 10px;
 
 }
 
-.wish-cartLink {
+.wish-cartLink, .cart-cartLink {
     background-color: #4D385F;
     text-align: center;
     color: white;
     width: 190px;
     margin: 27px 0px 0px 85px;  
 }
-
-/* ____________________ Cart ____________________ */
 
 
 /* ____________________ Checkout ____________________ */
@@ -336,7 +360,7 @@ hr:not([size]) {
 
 /* ____________________ About ____________________ */
 
-.sidebar1 {
+.sidebar1, .sidebar1-cartTop {
     background-color: #0C6275;
     width: 300px;
     height: calc(100vh - 80px - 112px);
@@ -359,7 +383,7 @@ hr:not([size]) {
     margin: 50px 0px;
 }
 
-.about-card, .wish-card-outter {
+.about-card, .wish-card-outter, .cart-card-outter {
     margin-left: 30px;
     border: none;
 }
@@ -392,6 +416,10 @@ hr:not([size]) {
 /* ________________________________________ @media screen adj for sidebar */
 
 @media screen and (max-width: 768px) {
+    .cart-row {
+        margin-left: -15px;
+    }
+
     .sidebar1 {
         display: none !important;
     }
@@ -421,10 +449,26 @@ hr:not([size]) {
     .sidebar2 {
         width:82%
     }
+
+    .sidebar1-cartTop {
+        display: none !important;
+    }
+
+    .sidebar1-cartBot {
+        background-color: #0C6275;
+        width: 100%;
+        height: fit-content;
+    }
 }
 
 @media screen and (min-width: 769px) {
     .sidebar2 {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    .sidebar1-cartBot {
         display: none !important;
     }
 }
