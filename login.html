@@ -22,7 +22,7 @@
 
         <script src="https://kit.fontawesome.com/47c0d9cfc4.js" crossorigin="anonymous"></script>
 
-        <title>Signup</title>
+        <title>Login</title>
 
     </head>   
 <!-- __________________________________________________________________________________________________ -->
@@ -34,31 +34,28 @@
                 <div class="modal-header">
                     <button type="button" class="btn-close d-flex justify-content-end
                     " data-bs-dismiss="modal" aria-label="Close"></button>
-                    <h3 class="modal-title">Welcome!</h3>
-                    <p class="modal-subTitle">Please fill out the information below to create your account and start adding to your wishlist.</p>
+                    <h3 class="modal-title">Welcome Back!</h3>
+                    <p class="modal-subTitle"><b>Please sign in.</b></p>
+                    <p class="modal-sub-subTitle">If you don't already have an account you can signup <a class="a-alt" href="">here</a></p>
+                    <p class="err-msg"></p>
                 </div>
                 <div class="modal-body">
                     <form action="" class="loginForm" method="post">
     
-                        <div class="signup-email">
+                        <div class="username">
                             <label class="formInputs">Email:</label><br>
                             <input type="email" placeholder="Enter Email" class="formInputs" name="user" required>
                         </div>
                     
-                        <div class="signup-pass d-inline-block">
+                        <div class="password d-inline-block">
                             <label id="pass-label" class="formInputs">Password:</label><br>
                             <input type="password" placeholder="Enter Password" class="formInputs" name="pass" required>
                         </div>
-                    
-                        <div class="signup-pass-repeat d-inline-block">
-                            <label id="pass-label" class="formInputs">Confirm Password:</label><br>
-                            <input type="password" placeholder="Confirm Password" class="formInputs" name="pass-repeat" required>
 
-                            <button type="submit" class="btn-secondary signup-btn">Signup</button>
-                        </div>
+                        <button type="submit" class="btn-secondary login-btn d-inline">Login</button>
                     
                         <div class="" >
-                            <p class="terms"><a class="one" href="#">Terms & Conditions</a></p>       
+                            <p class="forgot"><a class="one" href="#">Forgot Password?</a></p>       
                         </div>
 
                         <div class="cancel d-flex justify-content-end">

@@ -30,6 +30,11 @@ a:hover {
     color: #0C6275;
 }
 
+.a-alt {
+    color: #0C6275;
+    text-decoration: underline;
+}
+
 /* ____________________ Nav Bar ____________________ */
 
 .navbar {
@@ -277,13 +282,18 @@ hr:not([size]) {
 
 .modal-title {
     text-align: center;
+    text-decoration: underline;
     margin-top: -15px;
 }
 
-.modal-subTitle {
+.modal-subTitle, .modal-sub-subTitle {
     text-align: center;
     max-width: 350px;
-    margin: auto;
+    margin: 5px auto 3px;
+}
+
+.modal-sub-subTitle {
+    max-width: 375px;
 }
 
 .modal-body {
@@ -291,11 +301,11 @@ hr:not([size]) {
 }
 
 .formInputs {
-    margin: 5px 0;
+    margin: 1px 0;
 }
 
-.signup-pass, .signup-pass-repeat {
-    margin-top: 3px;
+.signup-pass, .signup-pass-repeat, .username, .password {
+    margin-top: 5px;
 }
 
 .signup-pass-repeat {
@@ -308,7 +318,13 @@ hr:not([size]) {
     width: 110px;
 }
 
-.terms {
+.login-btn {
+    background-color: #91B3BC;
+    margin-left: 15px;
+    width: 75px;
+}
+
+.terms, .forgot {
   background-color: black;
   width: 100%;
   padding: 0.5rem;
@@ -326,6 +342,7 @@ hr:not([size]) {
   color: red;
 }
 
+
 @media screen and (max-width: 456px) {
     .signup-pass-repeat {
         margin-left: 0px;
@@ -334,8 +351,12 @@ hr:not([size]) {
 
 @media screen and (max-width: 321px) {
     .signup-btn {
-        margin-left: 0px;
-        margin-top: 5px;
+        margin: 10px 0px 0px;
+        width: 100%;
+    }
+
+    .login-btn {
+        margin: 0px;
     }
 }
 
