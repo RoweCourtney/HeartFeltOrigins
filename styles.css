@@ -362,6 +362,35 @@ hr:not([size]) {
 
 /* ____________________ Terms & Conditions ____________________ */
 
+/* all modal class info can be found above in signup / login etc */
+
+.termsConditions {
+    border: black;
+    border-style: solid;
+    max-width: 500px;
+    height: 250px;
+    overflow: scroll;
+}
+
+.terms-content {
+    padding: 15px;
+}
+
+.terms-btns {
+    background-color: black;
+    margin: 15px 0px 0px;
+    height: 40px;
+}
+
+.terms-cancel-btn {
+    margin: 5px;
+}
+.accept-btn {
+    background-color: #91B3BC;
+    margin: 5px;
+    margin-top: -35px;
+}
+
 
 /* ____________________ Wishlist / Cart ____________________ */
 

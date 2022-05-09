@@ -30,45 +30,44 @@
             <!-- add class "modal" back into 1st div. Removed to see what i'm building -->
         <div class="" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close d-flex justify-content-end
-                    " data-bs-dismiss="modal" aria-label="Close"></button>
-                    <h3 class="modal-title">Welcome!</h3>
-                    <p class="modal-subTitle">Please fill out the information below to create your account and start adding to your wishlist.</p>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close d-flex justify-content-end
+                        " data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h3 class="modal-title">Welcome!</h3>
+                        <p class="modal-subTitle">Please fill out the information below to create your account and start adding to your wishlist.</p>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="loginForm" method="post">
+        
+                            <div class="signup-email">
+                                <label class="formInputs">Email:</label><br>
+                                <input type="email" placeholder="Enter Email" class="formInputs" name="user" required>
+                            </div>
+                        
+                            <div class="signup-pass d-inline-block">
+                                <label id="pass-label" class="formInputs">Password:</label><br>
+                                <input type="password" placeholder="Enter Password" class="formInputs" name="pass" required>
+                            </div>
+                        
+                            <div class="signup-pass-repeat d-inline-block">
+                                <label id="pass-label" class="formInputs">Confirm Password:</label><br>
+                                <input type="password" placeholder="Confirm Password" class="formInputs" name="pass-repeat" required>
+
+                                <button type="submit" class="btn-secondary signup-btn">Signup</button>
+                            </div>
+                        
+                            <div class="" >
+                                <p class="terms"><a class="one" href="#">Terms & Conditions</a></p>       
+                            </div>
+
+                            <div class="cancel d-flex justify-content-end">
+                                <button type="button" class="cancel-btn">Cancel</button> 
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form action="" class="loginForm" method="post">
-    
-                        <div class="signup-email">
-                            <label class="formInputs">Email:</label><br>
-                            <input type="email" placeholder="Enter Email" class="formInputs" name="user" required>
-                        </div>
-                    
-                        <div class="signup-pass d-inline-block">
-                            <label id="pass-label" class="formInputs">Password:</label><br>
-                            <input type="password" placeholder="Enter Password" class="formInputs" name="pass" required>
-                        </div>
-                    
-                        <div class="signup-pass-repeat d-inline-block">
-                            <label id="pass-label" class="formInputs">Confirm Password:</label><br>
-                            <input type="password" placeholder="Confirm Password" class="formInputs" name="pass-repeat" required>
-
-                            <button type="submit" class="btn-secondary signup-btn">Signup</button>
-                        </div>
-                    
-                        <div class="" >
-                            <p class="terms"><a class="one" href="#">Terms & Conditions</a></p>       
-                        </div>
-
-                        <div class="cancel d-flex justify-content-end">
-                            <button type="button" class="cancel-btn">Cancel</button> 
-                        </div>
-
-                    </form>
-                  
-                </div>
-              </div>
             </div>
           </div>
 
