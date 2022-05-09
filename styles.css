@@ -264,20 +264,80 @@ hr:not([size]) {
 
 
 
-/* ____________________ Login ____________________ */
+/* ____________________ Login / Logout / Signup / Forgot Password ____________________ */
 
+.modal-dialog {
+    max-width: fit-content;
+}
 
-/* ____________________ Logout ____________________ */
+.modal-header {
+    display: block;
+    border-bottom: none; 
+}
 
+.modal-title {
+    text-align: center;
+    margin-top: -15px;
+}
 
-/* ____________________ Signup ____________________ */
+.modal-subTitle {
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+}
 
+.modal-body {
+    padding-top: 0;
+}
 
-/* ____________________ Reset (password) ____________________ */
+.formInputs {
+    margin: 5px 0;
+}
 
+.signup-pass, .signup-pass-repeat {
+    margin-top: 3px;
+}
 
-/* ____________________ Forgot (password) ____________________ */
+.signup-pass-repeat {
+   margin-left: 10px;
+}
 
+.signup-btn {
+    background-color: #91B3BC;
+    margin: 0 0 10px 15px;
+    width: 110px;
+}
+
+.terms {
+  background-color: black;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 10px;
+}
+
+.cancel-btn {
+  margin-top: -50px;
+  margin-bottom: 20px;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.err_msg {
+  color: red;
+}
+
+@media screen and (max-width: 456px) {
+    .signup-pass-repeat {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .signup-btn {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+}
 
 /* ____________________ Terms & Conditions ____________________ */
 
