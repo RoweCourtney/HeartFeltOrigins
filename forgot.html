@@ -22,44 +22,62 @@
 
         <script src="https://kit.fontawesome.com/47c0d9cfc4.js" crossorigin="anonymous"></script>
 
-        <title>Login</title>
+        <title>Forgot Password</title>
 
     </head>   
 <!-- __________________________________________________________________________________________________ -->
     <body>
             <!-- add class "modal" back into 1st div. Removed to see what i'm building -->
-        <div class="modal" tabindex="-1">
+        <div class="" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close d-flex justify-content-end
                         " data-bs-dismiss="modal" aria-label="Close"></button>
-                        <h3 class="modal-title">Welcome Back!</h3>
-                        <p class="modal-subTitle"><b>Please sign in.</b></p>
-                        <p class="modal-sub-subTitle">If you don't already have an account you can signup <a class="a-alt" href="">here</a></p>
-                        <p class="err-msg"></p>
+                        <h3 class="modal-title">Password Reset</h3>
+                        <p class="reset-msg">
+                            <!-- If the username provided matches our records you will recieve a reset code by email shortly. -->
+                        </p>
                     </div>
                     <div class="modal-body">
-                        <form action="" class="loginForm" method="post">
+                        <form action="" class="resetForm" method="post">
         
-                            <div class="username">
-                                <label class="formInputs">Email:</label><br>
+                            <div class="reset-username">
+                                <label class="formInputs">Username:</label><br>
                                 <input type="email" placeholder="" class="formInputs" name="user" required>
+
+                                <button type="button" class="request-btn">Request</button> 
                             </div>
+
+                        </form>
+
+                        <form>
+
+                            <hr class="reset-divider">
                         
-                            <div class="password d-inline-block">
-                                <label id="pass-label" class="formInputs">Password:</label><br>
+                            <div class="new-pass">
+                                <label id="pass-label" class="formInputs">New Password:</label><br>
                                 <input type="password" placeholder="" class="formInputs" name="pass" required>
                             </div>
-
-                            <button type="submit" class="btn-secondary login-btn d-inline">Login</button>
                         
-                            <div class="" >
-                                <p class="forgot"><a class="one" href="#">Forgot Password?</a></p>       
+                            <div class="new-pass-repeat d-inline-block">
+                                <label id="pass-label" class="formInputs">Confirm New Password:</label><br>
+                                <input type="password" placeholder="" class="formInputs" name="pass-repeat" required>
+                            </div>
+                        
+                            <div class="reset-code d-inline-block" >
+                                <label id="pass-label" class="formInputs">Reset Code:</label><br>
+                                <input type="text" placeholder="" class="formInputs" name="pass-repeat" required>      
                             </div>
 
-                            <div class="cancel d-flex justify-content-end">
-                                <button type="button" class="cancel-btn">Cancel</button> 
+                            <div class="reset-btns">
+                                <div class="cancel d-inline-block">
+                                    <button type="button" class="terms-cancel-btn">Cancel</button> 
+                                </div>
+            
+                                <div class="submit d-inline-block d-flex justify-content-end">
+                                    <button type="button" class="submit-btn">Submit</button> 
+                                </div>
                             </div>
 
                         </form>
