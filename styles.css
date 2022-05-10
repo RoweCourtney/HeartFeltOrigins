@@ -704,6 +704,11 @@ hr:not([size]) {
 
 .newReview {
     margin-bottom: 25px;
+    max-width: 400px;
+}
+
+textarea {
+    resize: none;
 }
 
 .submitReview-btn {
