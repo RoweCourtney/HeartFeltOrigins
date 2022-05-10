@@ -698,16 +698,25 @@ hr:not([size]) {
 
 /* ____________________ New Review ____________________ */
 
+.newReview-title, .newReview-item {
+    margin-bottom: 15px;
+}
+
+.newReview {
+    margin-bottom: 25px;
+}
+
+.submitReview-btn {
+    background-color: #91B3BC;
+    margin-top: -28px;
+}
 
 /* ____________________ new review star settings ____________________ */
 
 .star-rating {
-    display: flex;
-    align-items: center;
-    width: 160px;
+    width: 150px;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 40px auto;
     position: relative;
   }
  
@@ -716,10 +725,10 @@ hr:not([size]) {
   }
  
   .star-rating > label {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     font-family: Arial;
-    font-size: 30px;
+    font-size: 25px;
     transition: 0.2s ease;
     color: #adebfa;
   }
