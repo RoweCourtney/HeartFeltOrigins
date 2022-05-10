@@ -486,6 +486,99 @@ hr:not([size]) {
 
 /* ____________________ Checkout ____________________ */
 
+.modal-dialog {
+    border: gray;
+    border-style: solid;
+}
+
+.modal-body1, .modal-body2, .modal-body3 {
+    padding: 0px 20px 20px;
+    display: inline-block;
+}
+
+.modal-body2 {
+    margin-left: 420px;
+    margin-top: -408px;
+}
+
+.modal-body3 {
+    padding-top: 20px;
+}
+
+.acceptedCards {
+    margin: 10px 0px 16px
+}
+
+.nameInput, .emailInput, .addressInput, .cityInput, .numberInput, .monthInput {
+    width: 350px;
+}
+
+.stateInput, .zipInput, .yearInput, .cvvInput {
+    width: 160px;
+}
+
+.stateInput, .yearInput {
+    margin-right: 27px;
+}
+
+.divSpace {
+    margin: 10px 0px;
+}
+
+.customerName2, .customerAddress2, .customerZip2 {
+    margin-right: 70px;
+}
+
+.continue-btn {
+    background-color: #91B3BC;
+    margin: -25px 0px 20px;
+}
+
+.shippingBox {
+    margin: 15px 0px 0px 40px;
+}
+
+.shippingALT {
+    font-family: 'Lora';
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-body2 {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .shippingBox {
+        margin: -15px auto 15px;
+    }
+
+    .continue-btn {
+        margin: 0px 0px 20px;
+    }
+
+    .modal-body3 {
+        max-width: 400px;
+    }
+
+    .customerName2, .customerAddress2, .customerZip2 {
+        margin-right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    .nameInput, .emailInput, .addressInput, .cityInput, .numberInput, .monthInput {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .modal-body1, .modal-body2, .modal-body3 {
+        padding: 0px 10px 20px;
+    }
+}
+
 
 /* ____________________ Checkout Review ____________________ */
 
@@ -704,11 +797,6 @@ hr:not([size]) {
 
 .newReview {
     margin-bottom: 25px;
-    max-width: 400px;
-}
-
-textarea {
-    resize: none;
 }
 
 .submitReview-btn {
