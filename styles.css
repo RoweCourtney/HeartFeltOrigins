@@ -439,7 +439,7 @@ hr:not([size]) {
     opacity: 100;
 }
 
-.checkout-link {
+.checkout-link, .completeOrder-link {
     background-color: #1D3A66;
     text-align: center;
     padding: 5px;
@@ -498,7 +498,7 @@ hr:not([size]) {
 
 .modal-body2 {
     margin-left: 420px;
-    margin-top: -408px;
+    margin-top: -388px;
 }
 
 .modal-body3 {
@@ -581,6 +581,57 @@ hr:not([size]) {
 
 
 /* ____________________ Checkout Review ____________________ */
+.checkout-card-outter {
+    border: none;
+}
+
+.checkout-row {
+    margin: 20px 0px;
+}
+
+.checkout-col {
+    margin: 10px 0px;
+}
+
+.checkout-card-inner {
+    border: black;
+    border-style: solid;
+}
+
+.shippingReview, .paymentReview, .billingReview {
+    height: 200px;
+}
+
+.checkoutReview-content, .checkoutReview-same {
+    width: fit-content;
+    margin: auto;
+}
+
+.checkoutReview-same {
+    text-decoration: underline;
+}
+
+.ship-title, .pay-title, .bill-title {
+    padding: 10px;
+}
+
+.checkout-name, .checkout-cardName, .checkout-billName {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .checkout-row {
+        margin: 10px 20px 20px -45px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .checkout-row {
+       margin: 10px 5px 10px 20px;
+    }
+}
+
+
 
 
 /* ____________________ About ____________________ */
