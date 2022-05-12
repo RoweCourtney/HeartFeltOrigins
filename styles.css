@@ -581,6 +581,7 @@ hr:not([size]) {
 
 
 /* ____________________ Checkout Review ____________________ */
+
 .checkout-card-outter {
     border: none;
 }
@@ -631,8 +632,45 @@ hr:not([size]) {
     }
 }
 
+/* ____________________ Order Confirmation ____________________ */
 
+.thankYou, .thankYou-msg {
+    text-align: center;
+}
 
+.thankYou {
+    margin: 70px auto 0px;
+    font-family: 'walking stones';
+    font-size: 60px;
+    color: #4D385F;
+}
+
+.thankYou-msg {
+    margin: 0px auto 30px;
+}
+
+.order-heading {
+    text-decoration: underline;
+    color: #4D385F;
+}
+
+.confirmation {
+    border: black;
+    border-style: solid;
+    max-width: fit-content;
+    margin: 20px 0px;
+}
+
+.order, .ship-to {
+    margin: 20px;
+}
+
+.sales-final-msg {
+    color: #2a5d72;
+    font-size: 11px;
+    text-align: center;
+    margin: 2px;
+}
 
 /* ____________________ About ____________________ */
 
