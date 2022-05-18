@@ -32,7 +32,7 @@
         <div class="row about-row g-0">
 
             <div class="col sidebar1 col-xs-12 col-md-8 col-lg-4 col-xl-3 ">
-                <div class="Admin-links">
+                <div class="admin-links">
                     <h2 class="addNew">Add New</h2>
                     <hr class="addNew-hr">
                     <p class="newCategory"><a href="#">Category</a></p>
@@ -44,20 +44,121 @@
             </div>
 
             <div class="col adminDB col-xs-12 col-sm-12 col-lg-8 col-xl-9 ">
-                <div class="card about-card">
-                    <div class="row about-row g-0">
+                <div class="card admin-card">
+                    <div class="row admin-row about-row g-0">
 
-                        <h1 class="pageTitle">Admin Dashboard</h1>
-                        <hr class="hr-teal">
+                        <h1 class="admin-pageTitle">Admin Dashboard</h1>
+                        <hr class="admin-hr-teal">
 
-                        <div class="col col-lg-12 col-xl-12 newArtListingForm d-flex justify-content-evenly">
-                            <div class="newArtListing-form">
-                                
+                        <div class="col adminOrders col-md-4 col-lg-4 col-xl-4 d-flex justify-content-evenly">
+                            <div class="newOrders">
+                                <p>##</p>
+                                <hr class="hr-purple">
+                                <h2>New Orders</h2>
                             </div>
-                            
+                        </div>
+
+                        <div class="col adminProcessing col-md-4 col-lg-4 col-xl-4 d-flex justify-content-evenly">
+                            <div class="processingOrders">
+                                <p>##</p>
+                                <hr class="hr-purple">
+                                <h2>In Process</h2>
+                            </div>
+                        </div>
+
+                        <div class="col adminShipping col-md-4 col-lg-4 col-xl-4 d-flex justify-content-evenly">
+                            <div class="shippedOrders">
+                                <p>##</p>
+                                <hr class="hr-purple">
+                                <h2>Shipped</h2>   
+                            </div> 
                         </div>
 
                     </div>
+
+                    <div class="row about-row g-0">
+                        <h2 class="salesTitle">Sales Metrics</h2>
+                        
+                        <div class="col col-md-4 col-lg-4 col-xl-4 d-flex justify-content-evenly">
+                            <div class="graphs-revenue">
+                                <p class="graph-titles">Revenue</p>
+                                <hr class="graph-hr">
+                                 
+                            </div> 
+                            <div class="btn-group revenue-dropdown">
+                                <button class="btn btn-dark dropdown-toggle revenue-btn" id="revenueDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">Graph Parameters &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                                  </svg></button>
+
+                                <ul class="dropdown-menu" aria-labelledby="revenueDropdown">
+                                    <li><a class="dropdown-item revenue-item" href="#">Range ? to ?</a></li>
+                                    <hr class="graphMenu-hr">
+                                    <li><a class="dropdown-item revenue-item" href="#">Weekly</a></li>
+                                    <hr class="graphMenu-hr">
+                                    <li><a class="dropdown-item revenue-item active" href="#">Monthly</a></li>
+                                    <hr class="graphMenu-hr">
+                                    <li><a class="dropdown-item revenue-item" href="#">Yearly</a></li>
+                                </ul>
+
+                            </div>
+                           
+                        </div>
+
+                        <div class="col col-md-4 col-lg-4 col-xl-4 d-flex justify-content-evenly">
+                            <div class="graphs-Orders">
+                                <p class="graph-titles">Orders</p>
+                                <hr class="graph-hr">
+                                 
+
+                            </div> 
+
+                            <div class="btn-group orders-dropdown">
+                                <button class="btn btn-dark dropdown-toggle orders-btn" id="ordersDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">Graph Parameters &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                                  </svg></button>
+
+                                <ul class="dropdown-menu" aria-labelledby="ordersDropdown">
+                                    <li><a class="dropdown-item orders-item" href="#">Range ? to ?</a></li>
+                                    <hr class="graphMenu-hr">
+                                    <li><a class="dropdown-item orders-item" href="#">Weekly</a></li>
+                                    <hr class="graphMenu-hr">
+                                    <li><a class="dropdown-item orders-item active" href="#">Monthly</a></li>
+                                    <hr class="graphMenu-hr">
+                                    <li><a class="dropdown-item orders-item" href="#">Yearly</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="col col-md-4 col-lg-4 col-xl-4 d-flex justify-content-evenly">
+                            <div class="graphs-siteViews">
+                                <p class="graph-titles">Site Traffic</p>
+                                <hr class="graph-hr">
+                                 
+
+                            </div> 
+
+                            <div class="btn-group siteViews-dropdown">
+                                <button class="btn btn-dark dropdown-toggle siteViews-btn" id="siteViewsDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">Graph Parameters &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                                  </svg></button>
+
+                                <ul class="dropdown-menu" aria-labelledby="siteViewsDropdown">
+                                    <li><a class="dropdown-item siteViews-item" href="#">Range ? to ?</a></li>
+                                    <hr class="graphMenu-hr">
+                                    <li><a class="dropdown-item siteViews-item" href="#">Weekly</a></li>
+                                    <hr class="graphMenu-hr">
+                                    <li><a class="dropdown-item siteViews-item active" href="#">Monthly</a></li>
+                                    <hr class="graphMenu-hr">
+                                    <li><a class="dropdown-item siteViews-item" href="#">Yearly</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
                 </div>
             </div>
 

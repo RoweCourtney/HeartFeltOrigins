@@ -697,7 +697,7 @@ hr:not([size]) {
     margin: 50px 0px;
 }
 
-.about-card, .wish-card-outter, .cart-card-outter {
+.about-card, .wish-card-outter, .cart-card-outter, .admin-card {
     margin-left: 30px;
     border: none;
 }
@@ -946,16 +946,6 @@ hr:not([size]) {
 
 /* ____________________ Admin Dashboard ____________________ */
 
-.pageTitle {
-    color: #4D385F;
-}
-
-.hr-teal {
-    color: #0C6275;
-    opacity: 100%;
-    margin-bottom: 20px;
-}
-
 .addNew {
     margin: 30px 0px 0px 30px;
     color: white;
@@ -967,6 +957,112 @@ hr:not([size]) {
 
 .newCategory, .newArtListing, .newDigital {
     margin: 20px 0px 5px 30px;
+}
+
+.adminDB {
+    margin: 30px 0px;
+}
+
+.admin-card {
+    /* see about section */
+}
+
+.admin-pageTitle, .pageTitle {
+    color: #4D385F;
+}
+
+.admin-hr-teal, .hr-teal {
+    color: #0C6275;
+    opacity: 100%;
+    margin-bottom: 20px;
+}
+
+.hr-purple {
+    color: #4D385F;
+    opacity: 75%;
+    margin: 15px;
+}
+
+.newOrders, .processingOrders, .shippedOrders {
+    border: #5B7D87;
+    border-style: solid;
+    text-align: center;
+    padding: 30px;
+    margin: 30px 0px;
+}
+
+.salesTitle {
+    margin: 30px 0px;
+    text-decoration: underline;
+}
+
+.graphs-revenue, .graphs-Orders, .graphs-siteViews {
+    border: #0C6275;
+    border-style: solid;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+    overflow: scroll;
+}
+
+.graph-titles {
+    margin: 5px 0px;
+}
+
+.graph-hr {
+    color: #4D385F;
+    opacity: 75%;
+    margin-top: -5px;
+    width: 90%;
+}
+
+.graphMenu-hr {
+    width: 100%;
+}
+
+.revenue-dropdown, .orders-dropdown, .siteViews-dropdown {  
+    width: 300px; 
+    margin-top: 205px;
+    margin-left: -337px;
+}
+
+.revenue-btn, .orders-btn, .siteViews-btn {
+    font-family: 'Lora';
+    font-size: 12px;
+    width: 300px;
+    border-radius: 0%;
+}
+
+.revenue-item, .orders-item, .siteViews-item {
+    font-size: 12px;
+    font-family: 'Lora';
+}
+
+@media screen and (max-width: 769px) {
+
+    .admin-pageTitle, .admin-hr-teal, .pageTitle, .hr-teal {
+        margin-left: -15px;
+    }
+
+    .adminOrders {
+        margin-left: -15px;
+    }
+
+    .graphs-revenue {
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .adminProcessing, .adminShipping {
+        margin-left: -15px;
+    }
+
+    .graphs-revenue, .graphs-Orders, .graphs-siteViews {
+        margin-left: -20px;
+        margin-bottom: 50px;
+    }
 }
 
 /* ____________________ New Category ____________________ */
@@ -1011,7 +1107,7 @@ hr:not([size]) {
     }
 
     .pageTitle, .hr-teal {
-        margin-left: -15px;
+        /* see Admin section */
     }
 
 }
@@ -1024,7 +1120,7 @@ hr:not([size]) {
 }
 
 @media screen and (max-width: 321px) {
-    
+
     .category-preview {
         transform: scale(0.65);
     }
