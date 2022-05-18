@@ -1207,6 +1207,91 @@ hr:not([size]) {
     }
 }
 
+/* ____________________ Support Small ____________________ */
+
+.dreamsLogo {
+    width: 200px;
+    height: 100px;
+    margin: 30px 50px 0px 20px;
+}
+
+.supportSmall-card {
+    margin: 30px 15px;
+    padding: 20px;
+}
+
+.supportSmall-img {
+    border: black;
+    border-style: solid;
+    width: 150px;
+    height: 200px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.title-supportSmall, .ownerName, .website-supportSmall, .email-supportSmall, .phone-supportSmall {
+    margin-left: 170px;
+}
+
+.title-supportSmall {
+    margin-top: -210px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.ownerName {
+    font-size: 11px;
+    margin-top: -8px;
+    margin-bottom: 25px;
+}
+
+.about-supportSmall {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 769px) {
+    .supportSmall-img {
+        transform: scale(0.75);
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+
+    .title-supportSmall, .ownerName, .website-supportSmall, .email-supportSmall, .phone-supportSmall {
+        margin-left: 125px;
+    }
+
+    .title-supportSmall {
+        margin-top: -195px;
+    }
+
+    .ownerName {
+        margin-bottom: 15px;
+    }
+
+    .about-supportSmall {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .supportSmall-img {
+        margin-top: 20px;
+    }
+
+    .title-supportSmall {
+        margin-top: -240px;
+        margin-left: 0px;
+    }
+
+    .ownerName {
+        margin-left: 0px;
+    }
+
+    .about-supportSmall {
+        margin-top: 50px;
+    }
+}
+
 /* ____________________ Footer ____________________ */
 
 .copyright {
