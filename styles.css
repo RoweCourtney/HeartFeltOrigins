@@ -983,7 +983,7 @@ hr:not([size]) {
     margin: 10px 0px;
 }
 
-.newCategory-btn {
+.newCategory-btn, .newListing-btn {
     margin: 15px 0px;
     width: 250px;
 }
@@ -1006,17 +1006,31 @@ hr:not([size]) {
         margin: 250px 0px 50px -350px;
     }
 
-    .newArtListingForm, .pageTitle, .hr-teal {
-        margin-left: -80px;
+    .newCategoryForm {
+        margin-left: -50px;
     }
 
     .pageTitle, .hr-teal {
         margin-left: -15px;
     }
 
-    .artListing-preview {
-        margin: 0px 0px 50px -450px;
-        margin-top: 450px;
+}
+
+@media screen and (max-width: 376px) {
+
+    .newCategoryForm {
+        margin-left: -1px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    
+    .category-preview {
+        transform: scale(0.65);
+    }
+
+    .newCategory-btn {
+        width: 190px;
     }
 }
 
@@ -1056,23 +1070,19 @@ hr:not([size]) {
 
 @media screen and (max-width: 426px) {
 
-    .newArtListingForm {
+    .newArtListingForm, .newDigitalForm {
         margin-left: -80px;
     }
 
-    .pageTitle, .hr-teal {
-        margin-left: -15px;
-    }
-
     .artListing-preview {
-        margin: 0px 0px 50px -450px;
+        margin: 0px 0px -100px -450px;
         margin-top: 450px;
     }
 }
 
 @media screen and (max-width: 376px) {
 
-    .newArtListingForm {
+    .newArtListingForm, .newDigitalForm {
         margin-left: -70px;
     }
 
@@ -1088,7 +1098,7 @@ hr:not([size]) {
 
 @media screen and (max-width: 321px) {
 
-    .newArtListingForm {
+    .newArtListingForm, .newDigitalForm {
         margin-left: -50px;
     }
 
@@ -1096,7 +1106,7 @@ hr:not([size]) {
         margin-top: 600px;
     }
 
-    .newCategory-btn {
+    .newListing-btn {
         width: 190px;
     }
 }
