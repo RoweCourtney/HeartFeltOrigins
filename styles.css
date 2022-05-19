@@ -955,7 +955,7 @@ hr:not([size]) {
     width: 250px;
 }
 
-.newCategory, .newArtListing, .newDigital {
+.newCategory, .newArtListing, .newDigital, .newSmall {
     margin: 20px 0px 5px 30px;
 }
 
@@ -1079,7 +1079,7 @@ hr:not([size]) {
     margin: 10px 0px;
 }
 
-.newCategory-btn, .newListing-btn {
+.newCategory-btn, .newListing-btn, .newBusiness-btn {
     margin: 15px 0px;
     width: 250px;
 }
@@ -1290,6 +1290,43 @@ hr:not([size]) {
     .about-supportSmall {
         margin-top: 50px;
     }
+}
+
+/* ____________________ New Support Small ____________________ */
+
+.supportSmall-preview {
+    margin-top: -20px;
+}
+
+.newBusiness-btn {
+    width: 190px;
+}
+
+@media screen and (max-width: 1024px) {
+    .supportSmall-preview {
+        margin-left: -70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .supportSmall-preview {
+        margin-left: -0px;
+    }
+
+    .newSupportSmall-form {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .newSupportSmall-form {
+        margin-left: 100px;
+    }
+
+    /* .supportSmall-preview {
+        margin-top: 600px;
+        margin-left: -300px;
+    } */
 }
 
 /* ____________________ Footer ____________________ */
