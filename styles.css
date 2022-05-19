@@ -1147,12 +1147,12 @@ hr:not([size]) {
     margin-top: -100px;
 }
 
-/* .preview-tag2 {
+.preview-tag2 {
     transform: rotate(90deg);
     color: #91B3BC;
     font-size: 55px;
-    margin: -200px 0px 0px -645px;
-} */
+    margin: -220px -225px 0px 100px;
+}
 
 @media screen and (max-width: 769px) {
     .newArtListingForm {
@@ -1295,11 +1295,18 @@ hr:not([size]) {
 /* ____________________ New Support Small ____________________ */
 
 .supportSmall-preview {
-    margin-top: -20px;
+    margin-top: -25px;
 }
 
 .newBusiness-btn {
     width: 190px;
+}
+
+.preview-tag3 {
+    color: #91B3BC;
+    font-size: 45px;
+    text-align: center;
+    margin:-20px 0px 15px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1320,13 +1327,28 @@ hr:not([size]) {
 
 @media screen and (max-width: 426px) {
     .newSupportSmall-form {
-        margin-left: 100px;
+        margin-left: 80px;
     }
 
-    /* .supportSmall-preview {
-        margin-top: 600px;
-        margin-left: -300px;
-    } */
+    .supportSmall-preview {
+        margin: 600px -70px 0px -310px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .supportSmall-preview {
+        margin-left: -340px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .supportSmall-preview {
+        margin: 0px -50px 0px -320px;
+    }
+
+    .newSupportSmall-form {
+        margin-left: 40px;
+    }
 }
 
 /* ____________________ Footer ____________________ */
