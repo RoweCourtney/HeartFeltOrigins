@@ -24,8 +24,12 @@
     "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
     "cloudinary": "^1.29.1",
+    "dotenv": "^16.0.1",
     "express": "^4.17.3",
+    "express-session": "^1.17.3",
+    "express-sessions": "^1.0.6",
     "multer": "^1.4.4",
+    "nodemon": "^2.0.16",
     "sessions": "0.0.2-7",
     "shippo": "^1.7.1"
   }

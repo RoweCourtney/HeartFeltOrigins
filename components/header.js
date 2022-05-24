@@ -10,7 +10,7 @@ connectedCallback() {
         <nav class="navbar navbar-expand ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="home.html">
-                    <img class="logo" src="logo/HeartLogo@3x.png" height="100px">
+                    <img class="logo" src="public/logo/HeartLogo@3x.png" height="100px">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@ connectedCallback() {
                         </div>
 
                         <div class="nav-item" id="cart">
-                        <a class="nav-link" href="#"><img class="cartIcon" src="icons/Cart@3x.png "  height="22px"></a>                    
+                        <a class="nav-link" href="#"><img class="cartIcon" src="public/icons/Cart@3x.png "  height="22px"></a>                    
                         </div>
 
                         <div class="nav-item dropdown" id="menu">
@@ -42,22 +42,22 @@ connectedCallback() {
 
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                                 <h3 class="menuHeader">Shopping</h3>
-                                <a class="dropdown-item" href="#">Alcohol Inks</a>
-                                <a class="dropdown-item" href="#">Digital Art</a>
+                                <a class="dropdown-item" href="alcohol.html">Alcohol Inks</a>
+                                <a class="dropdown-item" href="digital.html">Digital Art</a>
                                 <a class="dropdown-item" href="paintings.html">Paintings</a>
                                 <br>
 
                                 <h3 class="menuHeader">My Items</h3>
-                                <a class="dropdown-item" href="cart">Cart</a>
-                                <a class="dropdown-item" href="wishlist">Wishlist</a>
+                                <a class="dropdown-item" href="cart.html">Cart</a>
+                                <a class="dropdown-item" href="wishlist.html">Wishlist</a>
                                 <br>
 
                                 <h3 class="menuHeader">Information</h3>
-                                <a class="dropdown-item" href="#">About</a>
-                                <a class="dropdown-item" href="#">Contact Me</a>
-                                <a class="dropdown-item" href="#">Reviews</a>
-                                <a class="dropdown-item" href="#">Shipping</a>
-                                <a class="dropdown-item" href="#">Support Small</a>
+                                <a class="dropdown-item" href="about.html">About</a>
+                                <a class="dropdown-item" href="contact.html">Contact Me</a>
+                                <a class="dropdown-item" href="reviews.html">Reviews</a>
+                                <a class="dropdown-item" href="shipping.html">Shipping</a>
+                                <a class="dropdown-item" href="supportSmall.html">Support Small</a>
                             </div>
                         </div>
                     </div>
