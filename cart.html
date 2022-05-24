@@ -29,6 +29,144 @@
 <!-- __________________________________________________________________________________________________ -->
     <body>
 
+        <!-- _______________ Checkout Modal(s) _______________ -->
+        <div class="modal" id="checkout-modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close d-flex justify-content-end
+                        " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body1">
+                        <h3 class="modal-title1">Billing Address:</h3>
+                        <form action="" class="billingForm" method="post">
+        
+                            <div class="customerName divSpace">
+                                <label class="formInputs">Name:</label><br>
+                                <input type="text" placeholder="" class="nameInput" name="" required>
+                            </div>
+
+                            <div class="customerEmal divSpace">
+                                <label class="formInputs">Email:</label><br>
+                                <input type="email" placeholder="" class="emailInput" name="" required>
+                            </div>
+
+                            <div class="customerAddress divSpace">
+                                <label class="formInputs">Address:</label><br>
+                                <input type="text" placeholder="" class="addressInput" name="" required>
+                            </div>
+
+                            <div class="customerCity divSpace">
+                                <label class="formInputs">City:</label><br>
+                                <input type="text" placeholder="" class="cityInput" name="" required>
+                            </div>
+
+                            <div class="customerState d-inline-block divSpace">
+                                <label class="formInputs">State:</label><br>
+                                <input type="text" placeholder="" class="stateInput" name="" required>
+                            </div>
+
+                            <div class="customerZip d-inline-block divSpace">
+                                <label class="formInputs">Zip:</label><br>
+                                <input type="text" placeholder="" class="zipInput" name="" required>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="modal-body2">
+                        <h3 class="modal-title2">Payment:</h3>
+                        <form action="" class="paymentForm" method="post">
+
+                            <div class="acceptedCards">
+                                <label class="formInputs">Accepted Cards:</label>:</label><br>
+                                <img src="public/icons/visa.svg" class="visa" height="20px">
+                                <img src="public/icons/mastercard.svg" class="masterCard" height="20px">
+                                <img src="public/icons/amex.svg" class="amex" height="20px">
+                                <img src="public/icons/discover.svg" class="discover" height="20px">
+                            </div>
+        
+                            <div class="payerName divSpace">
+                                <label class="formInputs">Name on Card:</label><br>
+                                <input type="text" placeholder="" class="nameInput" name="" required>
+                            </div>
+
+                            <div class="payerCard divSpace">
+                                <label class="formInputs">Card Number:</label><br>
+                                <input type="email" placeholder="" class="numberInput" name="" required>
+                            </div>
+
+                            <div class="payerCard-expM divSpace">
+                                <label class="formInputs">Exp Month:</label><br>
+                                <input type="text" placeholder="" class="monthInput" name="" required>
+                            </div>
+
+                            <div class="payerCard-expY d-inline-block divSpace">
+                                <label class="formInputs">Exp Year:</label><br>
+                                <input type="text" placeholder="" class="yearInput" name="" required>
+                            </div>
+
+                            <div class="payerCard-CVV d-inline-block divSpace">
+                                <label class="formInputs">CVV:</label><br>
+                                <input type="text" placeholder="" class="cvvInput" name="" required>
+                            </div>
+
+                        </form>
+                    </div>
+            <!-- ____________________________________________________________________________ -->
+
+                    <div class="shippingBox d-inline-block">
+                        <input type="checkbox">
+                        <label class="shippingALT">Shipping to different address.</label>
+                    </div>
+
+                    <div class="continue d-flex justify-content-center">
+                        <button type="button" class="continue-btn">Continue to Checkout</button> 
+                    </div>
+            <!-- ____________________________________________________________________________ -->
+
+                    <div class="modal-body3">
+                        <h3 class="modal-title1">Shipping Address:</h3>
+                        <form action="" class="shippingForm" method="post">
+        
+                            <div class="customerName2 divSpace d-inline-block">
+                                <label class="formInputs">Name:</label><br>
+                                <input type="text" placeholder="" class="nameInput" name="" required>
+                            </div>
+
+                            <div class="customerEmail2 divSpace d-inline-block">
+                                <label class="formInputs">Email:</label><br>
+                                <input type="email" placeholder="" class="emailInput" name="" required>
+                            </div>
+                            <br>
+                            <div class="customerAddress2 divSpace d-inline-block">
+                                <label class="formInputs">Address:</label><br>
+                                <input type="text" placeholder="" class="addressInput" name="" required>
+                            </div>
+
+                            <div class="customerCity2 divSpace d-inline-block">
+                                <label class="formInputs">City:</label><br>
+                                <input type="text" placeholder="" class="cityInput" name="" required>
+                            </div>
+                            <br>
+                            <div class="customerState2 d-inline-block divSpace">
+                                <label class="formInputs">State:</label><br>
+                                <input type="text" placeholder="" class="stateInput" name="" required>
+                            </div>
+
+                            <div class="customerZip2 d-inline-block divSpace">
+                                <label class="formInputs">Zip:</label><br>
+                                <input type="text" placeholder="" class="zipInput" name="" required>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+             </div>
+        </div>
+
         <div class="row cart-row g-0 flex-row-reverse">
 
             <div class="col sidebar1-cartTop col-xs-12 col-md-4 col-lg-4 col-xl-3">
@@ -42,7 +180,7 @@
                     <hr class="hr2">
                     <p class="cartItems">Total: &nbsp&nbsp&nbsp&nbsp $40</p>
                     
-                    <p class="checkout-link"><a href="#">Checkout</a></p>
+                    <p class="checkout-link"><a href="#checkout-modal" data-bs-toggle="modal">Checkout</a></p>
                 </div> 
                 <p class="sales-final-msg" style="color: white;">**All Sales Are Final**</p>
             </div>
@@ -117,7 +255,7 @@
                                 <hr class="hr2">
                                 <p class="cartItems">Total: &nbsp&nbsp&nbsp&nbsp $40</p>
                                 
-                                <p class="checkout-link"><a href="#">Checkout</a></p>
+                                <p class="checkout-link"><a href="#checkout-modal" data-bs-toggle="modal">Checkout</a></p>
                             </div> 
                             <p class="sales-final-msg" style="color: white;">**All Sales Are Final**</p>
                         </div>

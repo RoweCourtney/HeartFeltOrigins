@@ -28,10 +28,65 @@
     </head>   
 <!-- __________________________________________________________________________________________________ -->
     <body>
+
+        <!-- _______________ New Review Modal _______________ -->
+        <div class="modal" id="newReview-modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close d-flex justify-content-end
+                        " data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h3 class="modal-title">Add Review</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="reviewForm" method="post">
+        
+                            <div class="newReview-title">
+                                <label class="formInputs">Title:</label><br>
+                                <input type="text" placeholder="" class="formInputs" name="" required>
+                            </div>
+                        
+                            <div class="newReview-item">
+                                <label  class="formInputs">Item being reviewed:</label><br>
+                                <input type="text" placeholder="" class="formInputs" name="" required>
+                            </div>
+                        
+                            <div class="newReview">
+                                <label  class="formInputs">Review:</label><br>
+                                <textarea type="text" rows="5" cols="50" style="max-width: 100%;" class="reviewText" required></textarea>
+                            </div>
+
+                            <div class="star-rating d-inline-block">
+                                <input type="radio" name="postRating" id="star-a" value="5"/>
+                                <label for="star-a"></label>
+                          
+                                <input type="radio" name="postRating" id="star-b" value="4"/>
+                                <label for="star-b"></label>
+                            
+                                <input type="radio" name="postRating" id="star-c" value="3"/>
+                                <label for="star-c"></label>
+                            
+                                <input type="radio" name="postRating" id="star-d" value="2"/>
+                                <label for="star-d"></label>
+                            
+                                <input type="radio" name="postRating" id="star-e" value="1"/>
+                                <label for="star-e"></label>
+                              </div>
+
+                            <div class="submitReview d-flex justify-content-end d-inline-block">
+                                <button type="button" class="submitReview-btn">Submit</button> 
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h2 class="reviewHeading">I'd LOVE to hear from you!</h2>
         <p class="reviewSubHead">Any feedback you can give me will help going forward so I can continue to provide you with more fun & exciting creations.</p>
 
-        <p class="addReview"><a href="newReview.html">Add Review</a></p>
+        <p class="addReview"><a href="#newReview-modal" data-bs-toggle="modal">Add Review</a></p>
 
         <div class="container">
             <div class="row review-row g-0">

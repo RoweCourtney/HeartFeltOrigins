@@ -124,30 +124,9 @@ app.get("/newSmallBusiness.html", function(req, res){
 
 
 // _________________________ Accounts Section _________________________ //
-
-//________________________________________ Signup ...
-
-app.get("/signup.html", function(req, res){
-    res.sendFile(__dirname  + "/signup.html");
-});
-
-//________________________________________ Login ...
-
-app.get("/login.html", function(req, res){
-    res.sendFile(__dirname  + "/login.html");
-});
-
-//________________________________________ Forgot Password ...
-
-app.get("/forgot.html", function(req, res){
-    res.sendFile(__dirname  + "/forgot.html");
-});
-
-//________________________________________ Terms & Conditions ...
-
-app.get("/terms.html", function(req, res){
-    res.sendFile(__dirname  + "/terms.html");
-});
+    // Relevant modal(s) can be found in header component.
+        // signup / login / forgot password / terms & conditions.
+        
 
 // _________________________ Sales Section _________________________ //
 
@@ -184,16 +163,10 @@ app.get("/wishlist.html", function(req, res){
     res.sendFile(__dirname  + "/wishlist.html");
 });
 
-//________________________________________ Cart ...
+//________________________________________ Cart (w/ checkout modal) ...
 
 app.get("/cart.html", function(req, res){
     res.sendFile(__dirname  + "/cart.html");
-});
-
-//________________________________________ Checkout ...
-
-app.get("/checkout.html", function(req, res){
-    res.sendFile(__dirname  + "/checkout.html");
 });
 
 //________________________________________ Checkout Review ...
@@ -223,16 +196,10 @@ app.get("/contact.html", function(req, res){
     res.sendFile(__dirname  + "/contact.html");
 });
 
-//________________________________________ Reviews ...
+//________________________________________ Reviews (new review = modal)...
 
 app.get("/reviews.html", function(req, res){
     res.sendFile(__dirname  + "/reviews.html");
-});
-
-//________________________________________ New Review ...
-
-app.get("/newReview.html", function(req, res){
-    res.sendFile(__dirname  + "/newReview.html");
 });
 
 //________________________________________ Shipping ...
